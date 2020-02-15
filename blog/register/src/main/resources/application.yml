@@ -5,12 +5,12 @@ spring:
     user:
       name: admin
       password: admin123
-  profiles:
+  #profiles:
     # 当前启动的节点配置名
-    active: node1
-  cloud:
-    inetutils:
-      preferred-networks: 127.0.0.1
+    #active: node1
+  #cloud:
+    #inetutils:
+      #preferred-networks: 127.0.0.1
 eureka:
   instance:
     prefer-ip-address: true
@@ -18,7 +18,7 @@ eureka:
   server:
      enable-self-preservation: false
   client:
-    register-with-eureka: true
-    fetch-registry: false
+    #register-with-eureka: true
+    #fetch-registry: true
     healthcheck:
       enabled: true
